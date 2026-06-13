@@ -1,8 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useCallback } from 'react';
 
 interface Testimonial {
   id: number;
@@ -10,130 +9,89 @@ interface Testimonial {
   location: string;
   rating: number;
   text: string;
-  avatar: string;
 }
 
 interface TestimonialSliderProps {
   testimonials: Testimonial[];
 }
 
-export default function TestimonialSlider({
-  testimonials,
-}: TestimonialSliderProps) {
+export default function TestimonialSlider({ testimonials }: TestimonialSliderProps) {
   const [current, setCurrent] = useState(0);
 
+  const next = useCallback(
+    () => setCurrent((prev) => (prev + 1) % testimonials.length),
+    [testimonials.length]
+  );
+  const prev = () =>
+    setCurrent((p) => (p === 0 ? testimonials.length - 1 : p - 1));
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
+    const interval = setInterval(next, 6000);
     return () => clearInterval(interval);
-  }, [testimonials.length]);
+  }, [next]);
 
-  const goToPrevious = () => {
-    setCurrent((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
-  };
-
-  const goToNext = () => {
-    setCurrent((prev) => (prev + 1) % testimonials.length);
-  };
+  const t = testimonials[current];
+  if (!t) return null;
 
   return (
-    <div className="relative">
-      <motion.div
-        key={current}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="bg-gradient-to-br from-emerald-50 to-forest-50 rounded-2xl p-8 md:p-12"
-      >
-        <div className="flex flex-col items-center text-center">
-          <div className="relative w-16 h-16 mb-6 rounded-full overflow-hidden border-4 border-emerald-600">
-            <Image
-              src={testimonials[current].avatar}
-              alt={testimonials[current].name}
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div className="flex gap-1 mb-4">
-            {Array.from({ length: testimonials[current].rating }).map(
-              (_, i) => (
-                <span key={i} className="text-2xl text-yellow-400">
+    <div className="relative max-w-3xl mx-auto">
+      <div className="liquid-glass noise-overlay rounded-2xl p-8 md:p-12 min-h-[280px] flex items-center">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.4 }}
+            className="w-full text-center"
+          >
+            <div className="flex justify-center gap-1 mb-5">
+              {Array.from({ length: t.rating }).map((_, i) => (
+                <span key={i} className="text-luculuc-300 text-xl">
                   ★
                 </span>
-              )
-            )}
-          </div>
-
-          <p className="text-lg text-forest-700 mb-6 italic max-w-2xl">
-            "{testimonials[current].text}"
-          </p>
-
-          <div>
-            <h4 className="font-serif text-xl font-bold text-forest-900">
-              {testimonials[current].name}
-            </h4>
-            <p className="text-sm text-forest-600">
-              {testimonials[current].location}
+              ))}
+            </div>
+            <p className="font-serif italic text-xl md:text-2xl text-cream/90 leading-relaxed mb-6">
+              &ldquo;{t.text}&rdquo;
             </p>
-          </div>
-        </div>
-      </motion.div>
+            <p className="font-semibold text-cream">{t.name}</p>
+            <p className="text-sm text-cream/50">{t.location}</p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
-      {/* Navigation */}
-      <div className="flex justify-between items-center mt-8">
+      <div className="flex justify-center items-center gap-4 mt-8">
         <button
-          onClick={goToPrevious}
-          className="p-3 rounded-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all"
+          onClick={prev}
+          className="liquid-glass rounded-full p-3 text-cream hover:bg-white/10 transition-colors"
+          aria-label="Anterior"
         >
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
 
         <div className="flex gap-2">
-          {testimonials.map((_, index) => (
+          {testimonials.map((_, i) => (
             <button
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                index === current
-                  ? 'bg-emerald-600 w-8'
-                  : 'bg-emerald-200'
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`h-1.5 rounded-full transition-all ${
+                i === current ? 'w-8 bg-luculuc-400' : 'w-1.5 bg-cream/20'
               }`}
+              aria-label={`Ir al testimonio ${i + 1}`}
             />
           ))}
         </div>
 
         <button
-          onClick={goToNext}
-          className="p-3 rounded-full border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all"
+          onClick={next}
+          className="liquid-glass rounded-full p-3 text-cream hover:bg-white/10 transition-colors"
+          aria-label="Siguiente"
         >
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
           </svg>
         </button>
       </div>

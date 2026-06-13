@@ -1,30 +1,44 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
-    { label: 'Inicio', href: '#' },
-    { label: 'Sobre', href: '#about' },
-    { label: 'Habitaciones', href: '#rooms' },
+    { label: 'Inicio', href: '#hero' },
+    { label: 'La Cabaña', href: '#about' },
+    { label: 'Espacios', href: '#rooms' },
     { label: 'Galería', href: '#gallery' },
     { label: 'Experiencias', href: '#experiences' },
     { label: 'Contacto', href: '#contact' },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-emerald-100">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">🌿</span>
-          </div>
-          <span className="font-serif text-xl font-bold text-forest-900 hidden sm:block">
-            Cabaña Tropical
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+        scrolled
+          ? 'bg-forest-950/80 backdrop-blur-md border-b border-white/5'
+          : 'bg-transparent'
+      }`}
+    >
+      <nav className="container-custom py-4 flex justify-between items-center">
+        <Link href="#hero" className="flex items-center gap-3 group">
+          <span className="text-2xl">🌿</span>
+          <span className="font-serif text-xl font-semibold tracking-wide text-cream">
+            LUCULUC
+            <span className="block text-[10px] tracking-[0.3em] text-cream/50 font-sans uppercase -mt-1">
+              Garden &amp; Forest
+            </span>
           </span>
         </Link>
 
@@ -34,73 +48,68 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-forest-700 hover:text-emerald-600 transition-colors text-sm font-medium"
+              className="text-cream/70 hover:text-cream transition-colors text-sm font-medium"
             >
               {item.label}
             </Link>
           ))}
         </div>
 
-        {/* CTA Buttons */}
-        <div className="hidden lg:flex gap-3 items-center">
-          <button className="px-6 py-2 rounded-lg border border-emerald-600 text-emerald-600 hover:bg-emerald-50 transition-colors font-medium text-sm">
-            Reservar
-          </button>
-          <button className="px-6 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 transition-colors font-medium text-sm">
-            WhatsApp
-          </button>
+        {/* Desktop CTA */}
+        <div className="hidden lg:flex">
+          <Link href="#booking" className="btn-glass rounded-full px-5 py-2.5 text-sm">
+            Reservar Ahora
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2"
+          className="lg:hidden p-2 text-cream"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Abrir menú"
         >
-          <svg
-            className="w-6 h-6 text-forest-900"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
+              strokeWidth={1.5}
+              d={mobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
             />
           </svg>
         </button>
+      </nav>
 
-        {/* Mobile Menu */}
+      {/* Mobile Menu */}
+      <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="absolute top-full left-0 right-0 bg-white border-b border-emerald-100 lg:hidden"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="lg:hidden overflow-hidden bg-forest-950/95 backdrop-blur-md border-b border-white/5"
           >
-            <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col gap-4">
+            <div className="container-custom py-6 flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-forest-700 hover:text-emerald-600 transition-colors font-medium"
+                  className="text-cream/80 hover:text-cream transition-colors font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-              <div className="flex gap-3 pt-4 border-t border-emerald-100">
-                <button className="flex-1 px-4 py-2 rounded-lg border border-emerald-600 text-emerald-600 hover:bg-emerald-50 transition-colors font-medium">
-                  Reservar
-                </button>
-                <button className="flex-1 px-4 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 transition-colors font-medium">
-                  WhatsApp
-                </button>
-              </div>
+              <Link
+                href="#booking"
+                className="btn-primary mt-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Reservar Ahora
+              </Link>
             </div>
           </motion.div>
         )}
-      </nav>
+      </AnimatePresence>
     </header>
   );
 }

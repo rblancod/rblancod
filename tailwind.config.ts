@@ -9,39 +9,52 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        emerald: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#145231',
+        // Brand palette derived from the LUCULUC logo
+        luculuc: {
+          50: '#eef7f0',
+          100: '#d6ecda',
+          200: '#a9d6b3',
+          300: '#74bb85',
+          400: '#46a05e',
+          500: '#2c8347',
+          600: '#1f6838',
+          700: '#1a5230',
+          800: '#143d25',
+          900: '#0d2719',
+          950: '#06160e',
         },
+        // Deep forest backgrounds (dark theme base)
         forest: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',
-          500: '#64748b',
-          600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
+          50: '#f1f6f3',
+          100: '#dcebe1',
+          200: '#bcd8c6',
+          300: '#8fbb9f',
+          400: '#5e9772',
+          500: '#3e7a55',
+          600: '#2c6042',
+          700: '#244d36',
+          800: '#1d3d2c',
+          900: '#122418',
+          950: '#0a1610',
         },
+        // Red poison-dart-frog accent
+        frog: {
+          400: '#f15a4a',
+          500: '#e23b2e',
+          600: '#c5281d',
+        },
+        cream: '#f5f3ec',
       },
       fontFamily: {
-        sans: ['var(--font-sans)'],
-        serif: ['var(--font-serif)'],
+        sans: ['var(--font-sans)', 'Inter', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-serif)', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',
         'slide-up': 'slideUp 0.6s ease-out',
-        'float': 'float 3s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
+        'marquee-left': 'marquee-left 28s linear infinite',
+        'marquee-right': 'marquee-right 32s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -54,16 +67,19 @@ const config: Config = {
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-20px)' },
+          '50%': { transform: 'translateY(-16px)' },
         },
-      },
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
+        'marquee-left': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
+        },
+        'marquee-right': {
+          from: { transform: 'translateX(-50%)' },
+          to: { transform: 'translateX(0)' },
+        },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
