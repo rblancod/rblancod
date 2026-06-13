@@ -1,0 +1,64 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "name": "Cascada del Río",
+      "category": "naturaleza",
+      "description": "Impresionante cascada de agua cristalina a solo 5 km de distancia",
+      "distance": "5 km",
+      "duration": "2 horas",
+      "difficulty": "moderada",
+      "image": "/images/experiences/waterfall.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mirador Panorámico",
+      "category": "miradores",
+      "description": "Vistas espectaculares del valle al atardecer",
+      "distance": "3 km",
+      "duration": "1 hora",
+      "difficulty": "fácil",
+      "image": "/images/experiences/viewpoint.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Restaurante Gourmet",
+      "category": "gastronomía",
+      "description": "Cocina de autor con productos locales",
+      "distance": "8 km",
+      "duration": "2 horas",
+      "difficulty": "N/A",
+      "image": "/images/experiences/restaurant.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sendero de Observación de Fauna",
+      "category": "aventura",
+      "description": "Camina entre la naturaleza y observa flora y fauna tropical",
+      "distance": "4 km",
+      "duration": "3 horas",
+      "difficulty": "moderada",
+      "image": "/images/experiences/hiking.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cafetería Local",
+      "category": "gastronomía",
+      "description": "Café artesanal con vistas al jardín tropical",
+      "distance": "2 km",
+      "duration": "1 hora",
+      "difficulty": "N/A",
+      "image": "/images/experiences/cafe.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Tour de Aventura",
+      "category": "aventura",
+      "description": "Zip-line, rappel y actividades emocionantes",
+      "distance": "6 km",
+      "duration": "4 horas",
+      "difficulty": "alta",
+      "image": "/images/experiences/adventure.jpg"
+    }
+  ]
+}

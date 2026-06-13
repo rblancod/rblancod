@@ -1,0 +1,44 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "María García",
+      "location": "Madrid, España",
+      "rating": 5,
+      "text": "Fue la experiencia más memorable de nuestras vacaciones. La cabaña es exactamente como se muestra, y el servicio fue impecable. ¡Definitivamente volveremos!",
+      "avatar": "/images/avatars/avatar1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Carlos López",
+      "location": "México",
+      "rating": 5,
+      "text": "La ubicación es perfecta, en medio de la naturaleza pero con todas las comodidades. El WiFi rápido me permitió trabajar sin problemas. Recomendado 100%.",
+      "avatar": "/images/avatars/avatar2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Jennifer Smith",
+      "location": "Estados Unidos",
+      "rating": 5,
+      "text": "Mi familia amó cada detalle. Las vistas son espectaculares, y el personal fue muy atento. Fue nuestra mejor decisión pasar nuestras vacaciones aquí.",
+      "avatar": "/images/avatars/avatar3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ana Rodríguez",
+      "location": "Colombia",
+      "rating": 5,
+      "text": "El proceso de reserva fue fácil, el check-in rápido y la cabaña superó nuestras expectativas. Además, el equipo respondió cada una de nuestras preguntas al instante.",
+      "avatar": "/images/avatars/avatar4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "David Chen",
+      "location": "Singapur",
+      "rating": 5,
+      "text": "Perfecto para parejas buscando privacidad y tranquilidad. El Jacuzzi bajo las estrellas fue simplemente mágico. Ya estoy buscando fechas para mi próxima visita.",
+      "avatar": "/images/avatars/avatar5.jpg"
+    }
+  ]
+}

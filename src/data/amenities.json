@@ -1,0 +1,76 @@
+{
+  "amenities": [
+    {
+      "id": 1,
+      "name": "WiFi de Alta Velocidad",
+      "icon": "wifi",
+      "description": "Conexión de fibra óptica confiable para trabajar o entretenerse"
+    },
+    {
+      "id": 2,
+      "name": "Cocina Completa",
+      "icon": "cooking",
+      "description": "Equipada con todos los electrodomésticos modernos"
+    },
+    {
+      "id": 3,
+      "name": "Estacionamiento",
+      "icon": "parking",
+      "description": "Parqueo seguro dentro de la propiedad"
+    },
+    {
+      "id": 4,
+      "name": "Agua Caliente",
+      "icon": "water",
+      "description": "Sistema de calentamiento solar y respaldo eléctrico"
+    },
+    {
+      "id": 5,
+      "name": "Smart TV",
+      "icon": "tv",
+      "description": "Entretenimiento con acceso a plataformas de streaming"
+    },
+    {
+      "id": 6,
+      "name": "Aire Acondicionado",
+      "icon": "ac",
+      "description": "Clima controlado en todas las áreas"
+    },
+    {
+      "id": 7,
+      "name": "Jacuzzi Privado",
+      "icon": "jacuzzi",
+      "description": "Bañera de hidromasaje con vista al jardín"
+    },
+    {
+      "id": 8,
+      "name": "Área de Trabajo",
+      "icon": "workspace",
+      "description": "Oficina equipada para productividad"
+    },
+    {
+      "id": 9,
+      "name": "Terraza BBQ",
+      "icon": "bbq",
+      "description": "Parrilla para cenas al aire libre"
+    },
+    {
+      "id": 10,
+      "name": "Sistema de Seguridad",
+      "icon": "security",
+      "description": "Cámaras y cerraduras inteligentes para tu tranquilidad"
+    },
+    {
+      "id": 11,
+      "name": "Jardín Tropical",
+      "icon": "garden",
+      "description": "Entorno natural con plantas nativas"
+    },
+    {
+      "id": 12,
+      "name": "Servicio 24/7",
+      "icon": "service",
+      "description": "Soporte técnico y personal disponible en todo momento"
+    }
+  ]
+}

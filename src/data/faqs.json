@@ -1,0 +1,64 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "category": "Reservations",
+      "question": "¿Cuál es el procedimiento de reserva?",
+      "answer": "Puedes reservar directamente a través de nuestro sitio web, vía WhatsApp o correo electrónico. Una vez confirmada tu reserva, recibirás un correo con todos los detalles e instrucciones de acceso."
+    },
+    {
+      "id": 2,
+      "category": "Reservations",
+      "question": "¿Cuál es la política de cancelación?",
+      "answer": "Ofrecemos cancelación gratuita hasta 7 días antes de tu llegada. Después de este período, se aplicará el 50% de la tarifa. Cancelaciones 2 días antes del check-in son no reembolsables."
+    },
+    {
+      "id": 3,
+      "category": "CheckIn",
+      "question": "¿Cuál es el horario de check-in y check-out?",
+      "answer": "Check-in: 3:00 PM | Check-out: 12:00 PM. Se puede acordar horarios especiales previa solicitud."
+    },
+    {
+      "id": 4,
+      "category": "CheckIn",
+      "question": "¿Cómo es el proceso de acceso a la propiedad?",
+      "answer": "Recibirás un código de acceso digital que podrás usar en la cerradura inteligente. También contarás con soporte de nuestro equipo para cualquier duda."
+    },
+    {
+      "id": 5,
+      "category": "Pets",
+      "question": "¿Se permiten mascotas?",
+      "answer": "Sí, aceptamos mascotas pequeñas y medianas. Aplica una tarifa adicional de $25 por mascota por noche. Deben ser bien educadas y no pueden quedarse solas."
+    },
+    {
+      "id": 6,
+      "category": "Parking",
+      "question": "¿Hay estacionamiento disponible?",
+      "answer": "Sí, contamos con estacionamiento seguro dentro de la propiedad, incluido en tu reserva."
+    },
+    {
+      "id": 7,
+      "category": "WiFi",
+      "question": "¿Cuál es la velocidad del WiFi?",
+      "answer": "Contamos con fibra óptica de 300 Mbps, ideal para trabajar o ver contenido en streaming sin interrupciones."
+    },
+    {
+      "id": 8,
+      "category": "Guests",
+      "question": "¿Cuál es la capacidad máxima de la cabaña?",
+      "answer": "La cabaña puede alojar cómodamente a 4 personas. Para grupos más grandes, contacta directamente para opciones especiales."
+    },
+    {
+      "id": 9,
+      "category": "Amenities",
+      "question": "¿La cabaña está completamente equipada?",
+      "answer": "Sí, incluye cocina completa, electrodomésticos modernos, aire acondicionado, Smart TV y todas las comodidades necesarias para una estadía confortable."
+    },
+    {
+      "id": 10,
+      "category": "Support",
+      "question": "¿Hay servicio de atención disponible?",
+      "answer": "Contamos con soporte 24/7 vía WhatsApp para cualquier emergencia o duda durante tu estadía."
+    }
+  ]
+}

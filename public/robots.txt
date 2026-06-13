@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /rooms
+Allow: /gallery
+Allow: /experiences
+Allow: /contact
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.well-known/
+
+Sitemap: https://cabanatropical.com/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
