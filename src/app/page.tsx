@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import Card from '@/components/Card';
 import TestimonialSlider from '@/components/TestimonialSlider';
 import FAQAccordion from '@/components/FAQAccordion';
+import Gallery from '@/components/Gallery';
 import propertyData from '@/data/property.json';
 import amenitiesData from '@/data/amenities.json';
 import experiencesData from '@/data/experiences.json';
@@ -204,35 +205,7 @@ export default function Home() {
       </section>
 
       {/* GALLERY */}
-      <section id="gallery" className="section-padding container-custom">
-        <div className="text-center mb-14">
-          <span className="section-label inline-block mb-4">Galería</span>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-cream">
-            Verde por Todas Partes
-          </h2>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {['Exterior', 'Interior', 'Jardines', 'Habitación Principal', 'Atardeceres', 'Naturaleza'].map(
-            (label, i) => (
-              <motion.div
-                key={label}
-                initial={{ opacity: 0, scale: 0.96 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.06 }}
-                className={`liquid-glass rounded-2xl flex items-center justify-center text-cream/40 bg-gradient-to-br from-luculuc-900 to-forest-900 ${
-                  i % 5 === 0 ? 'md:row-span-2 aspect-[3/4] md:aspect-auto' : 'aspect-square'
-                }`}
-              >
-                <span className="text-sm tracking-wide text-center px-4">{label}</span>
-              </motion.div>
-            )
-          )}
-        </div>
-        <p className="text-center text-cream/40 text-sm mt-6">
-          📸 Próximamente: fotos reales de LUCULUC
-        </p>
-      </section>
+      <Gallery />
 
       {/* EXPERIENCES */}
       <section id="experiences" className="section-padding container-custom">
