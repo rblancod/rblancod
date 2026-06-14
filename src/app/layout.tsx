@@ -1,37 +1,88 @@
 import type { Metadata } from 'next';
-import { DefaultSeo } from 'next-seo';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import propertyData from '@/data/property.json';
+
+const SITE_URL = 'https://luculuc.com';
 
 export const metadata: Metadata = {
-  title: 'Cabaña Tropical Premium | Reserva Tu Escapada de Lujo',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'LUCULUC Garden & Forest | Cabaña en La Tigra, San Carlos',
+    template: '%s | LUCULUC Garden & Forest',
+  },
   description:
-    'Descubre nuestra exclusiva cabaña turística en Costa Rica. Naturaleza, privacidad y comodidad en un solo lugar. Reserva directa, sin intermediarios.',
-  keywords:
-    'cabaña tropical, alojamiento Costa Rica, casa de descanso, turismo, eco-lodge, lujo natural',
+    'LUCULUC Garden & Forest — una cabaña inmersa en la naturaleza tropical de San Carlos, Costa Rica. Verde, relajante, vivo. Reserva directa cerca del Volcán Arenal y La Fortuna.',
+  keywords: [
+    'cabaña San Carlos',
+    'LUCULUC',
+    'hospedaje La Tigra',
+    'cabaña Costa Rica',
+    'alojamiento Arenal',
+    'turismo La Fortuna',
+    'eco lodge Costa Rica',
+  ],
+  authors: [{ name: 'LUCULUC Garden & Forest' }],
   openGraph: {
     type: 'website',
-    locale: 'es_ES',
-    url: 'https://cabanatropical.com',
-    siteName: 'Cabaña Tropical Premium',
+    locale: 'es_CR',
+    url: SITE_URL,
+    siteName: 'LUCULUC Garden & Forest',
+    title: 'LUCULUC Garden & Forest | Verde Relajante Vivo',
+    description:
+      'Cabaña inmersa en la naturaleza tropical de San Carlos, Costa Rica. Tu refugio entre volcanes, bosque y jardines.',
     images: [
       {
-        url: 'https://cabanatropical.com/og-image.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
+        alt: 'LUCULUC Garden & Forest',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'LUCULUC Garden & Forest | Verde Relajante Vivo',
+    description:
+      'Cabaña inmersa en la naturaleza tropical de San Carlos, Costa Rica.',
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
+    googleBot: { index: true, follow: true },
   },
+  alternates: { canonical: SITE_URL },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LodgingBusiness',
+  name: 'LUCULUC Garden & Forest',
+  description:
+    'Cabaña inmersa en la naturaleza tropical de La Tigra, San Carlos, Costa Rica.',
+  slogan: 'Verde Relajante Vivo',
+  url: SITE_URL,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'La Tigra',
+    addressRegion: 'Alajuela',
+    addressCountry: 'CR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: propertyData.location.latitude,
+    longitude: propertyData.location.longitude,
+  },
+  amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'WiFi', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Estacionamiento', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Jardín', value: true },
+  ],
+  petsAllowed: false,
+  smokingAllowed: false,
 };
 
 export default function RootLayout({
@@ -42,21 +93,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#16a34a" />
+        <meta name="theme-color" content="#06160e" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
-      <body className="bg-white text-forest-900 antialiased">
+      <body className="bg-forest-950 text-cream antialiased">
         <Header />
         {children}
         <FloatingWhatsApp />

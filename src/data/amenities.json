@@ -1,76 +1,59 @@
 {
+  "note": "Amenidades base. Ajusta según el equipamiento real de LUCULUC.",
   "amenities": [
     {
       "id": 1,
-      "name": "WiFi de Alta Velocidad",
+      "name": "WiFi",
       "icon": "wifi",
-      "description": "Conexión de fibra óptica confiable para trabajar o entretenerse"
+      "description": "Conexión a internet para mantenerte conectado durante tu estadía."
     },
     {
       "id": 2,
-      "name": "Cocina Completa",
+      "name": "Cocina",
       "icon": "cooking",
-      "description": "Equipada con todos los electrodomésticos modernos"
+      "description": "Espacio equipado para preparar tus propias comidas."
     },
     {
       "id": 3,
       "name": "Estacionamiento",
       "icon": "parking",
-      "description": "Parqueo seguro dentro de la propiedad"
+      "description": "Garaje y entrada privada para tu vehículo."
     },
     {
       "id": 4,
       "name": "Agua Caliente",
       "icon": "water",
-      "description": "Sistema de calentamiento solar y respaldo eléctrico"
+      "description": "Agua caliente disponible para tu comodidad."
     },
     {
       "id": 5,
       "name": "Smart TV",
       "icon": "tv",
-      "description": "Entretenimiento con acceso a plataformas de streaming"
+      "description": "Entretenimiento con acceso a plataformas de streaming."
     },
     {
       "id": 6,
-      "name": "Aire Acondicionado",
-      "icon": "ac",
-      "description": "Clima controlado en todas las áreas"
+      "name": "Jardín Tropical",
+      "icon": "garden",
+      "description": "Rodeada de palmeras y abundante vegetación nativa."
     },
     {
       "id": 7,
-      "name": "Jacuzzi Privado",
-      "icon": "jacuzzi",
-      "description": "Bañera de hidromasaje con vista al jardín"
+      "name": "Terraza",
+      "icon": "bbq",
+      "description": "Área exterior para descansar al aire libre."
     },
     {
       "id": 8,
-      "name": "Área de Trabajo",
-      "icon": "workspace",
-      "description": "Oficina equipada para productividad"
+      "name": "Check-in Independiente",
+      "icon": "security",
+      "description": "Acceso autónomo con caja de seguridad e instrucciones privadas."
     },
     {
       "id": 9,
-      "name": "Terraza BBQ",
-      "icon": "bbq",
-      "description": "Parrilla para cenas al aire libre"
-    },
-    {
-      "id": 10,
-      "name": "Sistema de Seguridad",
-      "icon": "security",
-      "description": "Cámaras y cerraduras inteligentes para tu tranquilidad"
-    },
-    {
-      "id": 11,
-      "name": "Jardín Tropical",
-      "icon": "garden",
-      "description": "Entorno natural con plantas nativas"
-    },
-    {
-      "id": 12,
-      "name": "Servicio 24/7",
+      "name": "Entorno de Bosque",
       "icon": "service",
-      "description": "Soporte técnico y personal disponible en todo momento"
+      "description": "Inmersión total en la naturaleza tropical de San Carlos."
     }
   ]
 }

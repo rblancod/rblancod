@@ -2,63 +2,51 @@
   "experiences": [
     {
       "id": 1,
-      "name": "Cascada del Río",
+      "name": "Volcán Arenal",
       "category": "naturaleza",
-      "description": "Impresionante cascada de agua cristalina a solo 5 km de distancia",
-      "distance": "5 km",
-      "duration": "2 horas",
-      "difficulty": "moderada",
-      "image": "/images/experiences/waterfall.jpg"
+      "description": "Uno de los volcanes más emblemáticos de Costa Rica, con senderos y vistas imponentes.",
+      "distance": "≈ 40 min",
+      "image": "/images/experiences/arenal.jpg"
     },
     {
       "id": 2,
-      "name": "Mirador Panorámico",
-      "category": "miradores",
-      "description": "Vistas espectaculares del valle al atardecer",
-      "distance": "3 km",
-      "duration": "1 hora",
-      "difficulty": "fácil",
-      "image": "/images/experiences/viewpoint.jpg"
+      "name": "Catarata de La Fortuna",
+      "category": "cataratas",
+      "description": "Impresionante caída de agua de 70 metros rodeada de selva tropical.",
+      "distance": "≈ 45 min",
+      "image": "/images/experiences/catarata-fortuna.jpg"
     },
     {
       "id": 3,
-      "name": "Restaurante Gourmet",
-      "category": "gastronomía",
-      "description": "Cocina de autor con productos locales",
-      "distance": "8 km",
-      "duration": "2 horas",
-      "difficulty": "N/A",
-      "image": "/images/experiences/restaurant.jpg"
+      "name": "Aguas Termales",
+      "category": "bienestar",
+      "description": "Relájate en las aguas termales naturales calentadas por el volcán Arenal.",
+      "distance": "≈ 40 min",
+      "image": "/images/experiences/termales.jpg"
     },
     {
       "id": 4,
-      "name": "Sendero de Observación de Fauna",
-      "category": "aventura",
-      "description": "Camina entre la naturaleza y observa flora y fauna tropical",
-      "distance": "4 km",
-      "duration": "3 horas",
-      "difficulty": "moderada",
-      "image": "/images/experiences/hiking.jpg"
+      "name": "Ciudad Quesada",
+      "category": "gastronomía",
+      "description": "Centro urbano de San Carlos con restaurantes, cafeterías y comercios locales.",
+      "distance": "≈ 30 min",
+      "image": "/images/experiences/ciudad-quesada.jpg"
     },
     {
       "id": 5,
-      "name": "Cafetería Local",
-      "category": "gastronomía",
-      "description": "Café artesanal con vistas al jardín tropical",
-      "distance": "2 km",
-      "duration": "1 hora",
-      "difficulty": "N/A",
-      "image": "/images/experiences/cafe.jpg"
+      "name": "Senderos & Bosque Lluvioso",
+      "category": "aventura",
+      "description": "Camina entre la exuberante naturaleza de San Carlos y observa flora y fauna tropical.",
+      "distance": "Alrededores",
+      "image": "/images/experiences/senderos.jpg"
     },
     {
       "id": 6,
-      "name": "Tour de Aventura",
+      "name": "Tours de Aventura",
       "category": "aventura",
-      "description": "Zip-line, rappel y actividades emocionantes",
-      "distance": "6 km",
-      "duration": "4 horas",
-      "difficulty": "alta",
-      "image": "/images/experiences/adventure.jpg"
+      "description": "Canopy, rafting, puentes colgantes y más actividades en la región de Arenal.",
+      "distance": "≈ 40-50 min",
+      "image": "/images/experiences/aventura.jpg"
     }
   ]
 }

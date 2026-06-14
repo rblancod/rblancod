@@ -2,43 +2,38 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "María García",
-      "location": "Madrid, España",
+      "name": "María José",
+      "location": "San José, Costa Rica",
       "rating": 5,
-      "text": "Fue la experiencia más memorable de nuestras vacaciones. La cabaña es exactamente como se muestra, y el servicio fue impecable. ¡Definitivamente volveremos!",
-      "avatar": "/images/avatars/avatar1.jpg"
+      "text": "Un lugar mágico para desconectar. La vegetación que rodea la cabaña te hace sentir dentro del bosque. Volveremos sin duda."
     },
     {
       "id": 2,
-      "name": "Carlos López",
-      "location": "México",
+      "name": "Carlos & Andrea",
+      "location": "Heredia, Costa Rica",
       "rating": 5,
-      "text": "La ubicación es perfecta, en medio de la naturaleza pero con todas las comodidades. El WiFi rápido me permitió trabajar sin problemas. Recomendado 100%.",
-      "avatar": "/images/avatars/avatar2.jpg"
+      "text": "El silencio, las palmeras y el verde por todas partes. LUCULUC es exactamente lo que su nombre promete: relajante y vivo."
     },
     {
       "id": 3,
-      "name": "Jennifer Smith",
-      "location": "Estados Unidos",
+      "name": "Daniel R.",
+      "location": "Cartago, Costa Rica",
       "rating": 5,
-      "text": "Mi familia amó cada detalle. Las vistas son espectaculares, y el personal fue muy atento. Fue nuestra mejor decisión pasar nuestras vacaciones aquí.",
-      "avatar": "/images/avatars/avatar3.jpg"
+      "text": "Ubicación perfecta para visitar Arenal y La Fortuna. La atención de Dahianna fue impecable desde el primer mensaje."
     },
     {
       "id": 4,
-      "name": "Ana Rodríguez",
-      "location": "Colombia",
+      "name": "Sofía M.",
+      "location": "Alajuela, Costa Rica",
       "rating": 5,
-      "text": "El proceso de reserva fue fácil, el check-in rápido y la cabaña superó nuestras expectativas. Además, el equipo respondió cada una de nuestras preguntas al instante.",
-      "avatar": "/images/avatars/avatar4.jpg"
+      "text": "El check-in independiente fue muy fácil con las instrucciones que nos enviaron. Privacidad total y mucha naturaleza."
     },
     {
       "id": 5,
-      "name": "David Chen",
-      "location": "Singapur",
+      "name": "James & Emily",
+      "location": "Estados Unidos",
       "rating": 5,
-      "text": "Perfecto para parejas buscando privacidad y tranquilidad. El Jacuzzi bajo las estrellas fue simplemente mágico. Ya estoy buscando fechas para mi próxima visita.",
-      "avatar": "/images/avatars/avatar5.jpg"
+      "text": "A peaceful tropical retreat surrounded by gardens. The perfect base to explore the Arenal region. Highly recommended!"
     }
   ]
 }

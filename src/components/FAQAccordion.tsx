@@ -16,47 +16,36 @@ interface FAQAccordionProps {
 
 export default function FAQAccordion({ faqs }: FAQAccordionProps) {
   const [openId, setOpenId] = useState<number | null>(null);
-
   const categories = Array.from(new Set(faqs.map((faq) => faq.category)));
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {categories.map((category) => (
         <div key={category}>
-          <h3 className="text-lg font-semibold text-forest-900 mb-4 px-4">
-            {category}
-          </h3>
+          <h3 className="section-label mb-4 px-1">{category}</h3>
           <div className="space-y-3">
             {faqs
               .filter((faq) => faq.category === category)
               .map((faq) => (
-                <motion.div
+                <div
                   key={faq.id}
-                  className="border border-emerald-200 rounded-lg overflow-hidden hover:border-emerald-400 transition-colors"
+                  className="liquid-glass rounded-xl overflow-hidden"
                 >
                   <button
-                    onClick={() =>
-                      setOpenId(openId === faq.id ? null : faq.id)
-                    }
-                    className="w-full px-6 py-4 flex justify-between items-center hover:bg-emerald-50 transition-colors"
+                    onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
+                    className="w-full px-6 py-4 flex justify-between items-center gap-4 text-left hover:bg-white/5 transition-colors"
+                    aria-expanded={openId === faq.id}
                   >
-                    <h4 className="text-left font-semibold text-forest-900">
-                      {faq.question}
-                    </h4>
+                    <h4 className="font-medium text-cream">{faq.question}</h4>
                     <motion.svg
-                      animate={{ rotate: openId === faq.id ? 180 : 0 }}
+                      animate={{ rotate: openId === faq.id ? 45 : 0 }}
                       transition={{ duration: 0.3 }}
-                      className="w-5 h-5 text-emerald-600 flex-shrink-0"
+                      className="w-5 h-5 text-luculuc-300 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
                     </motion.svg>
                   </button>
 
@@ -67,15 +56,15 @@ export default function FAQAccordion({ faqs }: FAQAccordionProps) {
                         animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="overflow-hidden border-t border-emerald-200"
+                        className="overflow-hidden"
                       >
-                        <div className="px-6 py-4 bg-emerald-50 text-forest-700">
+                        <p className="px-6 pb-5 text-sm text-cream/60 leading-relaxed">
                           {faq.answer}
-                        </div>
+                        </p>
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </motion.div>
+                </div>
               ))}
           </div>
         </div>

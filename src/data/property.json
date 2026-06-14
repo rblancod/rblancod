@@ -1,94 +1,136 @@
 {
-  "name": "Cabaña Tropical Premium",
-  "description": "Descubre el paraíso en nuestra exclusiva cabaña tropical",
-  "tagline": "Naturaleza, comodidad y privacidad en el corazón de la selva",
+  "name": "LUCULUC",
+  "fullName": "LUCULUC Garden & Forest",
+  "tagline": "Verde Relajante Vivo",
+  "description": "Una cabaña tropical en La Tigra, San Carlos. Rodeada de palmeras y abundante vegetación, LUCULUC es tu refugio para desconectar entre el verde vivo de Costa Rica.",
+  "shortDescription": "Tu refugio tropical entre volcanes, bosque y jardines en el corazón de San Carlos. Para 8 huéspedes, 3 habitaciones, privacidad total.",
+  "links": {
+    "airbnb": "https://es-l.airbnb.com/rooms/887112278835757984",
+    "allLinks": "https://solo.to/luculuccr"
+  },
   "location": {
-    "address": "Costa Rica",
-    "latitude": 10.3910,
-    "longitude": -84.2668,
+    "address": "La Lucha, La Tigra, San Carlos",
+    "region": "Alajuela",
+    "country": "Costa Rica",
+    "latitude": 10.3667,
+    "longitude": -84.5167,
     "nearbyPlaces": {
+      "fortuna": {
+        "name": "La Fortuna / Volcán Arenal",
+        "distance": "≈ 40 min"
+      },
+      "ciudadQuesada": {
+        "name": "Ciudad Quesada (San Carlos)",
+        "distance": "≈ 30 min"
+      },
+      "sanRamon": {
+        "name": "San Ramón",
+        "distance": "≈ 45 min"
+      },
       "airport": {
-        "name": "Aeropuerto Internacional",
-        "distance": "45 km"
+        "name": "Aeropuerto Internacional SJO",
+        "distance": "≈ 2 h 30 min"
       },
       "supermarket": {
-        "name": "Supermercado",
-        "distance": "8 km"
-      },
-      "hospital": {
-        "name": "Hospital",
-        "distance": "15 km"
+        "name": "Supermercado más cercano (La Tigra)",
+        "distance": "≈ 10 min"
       }
     }
   },
   "about": {
-    "title": "Sobre Nuestra Cabaña",
-    "description": "Bienvenido a tu refugio tropical. Nuestra cabaña ha sido diseñada meticulosamente para ofrecerte una experiencia incomparable, combinando la naturaleza salvaje con comodidades de lujo.",
-    "concept": "Un espacio donde la naturaleza y el confort se encuentran en perfecta armonía",
+    "title": "Sobre LUCULUC",
+    "concept": "Verde. Relajante. Vivo.",
+    "description": "LUCULUC Garden & Forest nace del deseo de crear un espacio donde la naturaleza se viva, no solo se observe. Entre palmeras, jardines y el sonido del bosque tropical de San Carlos, cada rincón fue pensado para que respires hondo, bajes el ritmo y te reconectes con lo esencial.",
     "highlights": [
-      "Arquitectura sostenible y eco-friendly",
-      "Vistas panorámicas de la naturaleza",
-      "Privacidad total garantizada",
-      "Atención personalizada 24/7",
-      "Ubicación estratégica entre atracciones"
+      "Cabaña para 8 huéspedes con 3 habitaciones independientes",
+      "Entorno natural de bosque y jardín tropical",
+      "Privacidad total para tu descanso",
+      "Ubicación estratégica entre Arenal, Fortuna y Ciudad Quesada",
+      "Acceso independiente con caja de seguridad",
+      "Espacio diseñado para desconectar y relajarte"
     ]
+  },
+  "checkIn": {
+    "time": "2:00 PM",
+    "checkOutTime": "11:00 AM",
+    "selfCheckIn": true,
+    "note": "Check-in independiente. Las instrucciones de acceso se envían de forma privada tras confirmar tu reserva."
+  },
+  "capacity": {
+    "guests": 8,
+    "bedrooms": 3,
+    "beds": {
+      "king": 1,
+      "queen": 3
+    },
+    "bathrooms": 1
   },
   "rooms": [
     {
       "id": 1,
-      "name": "Habitación Principal de Lujo",
-      "description": "Nuestra suite premium con vistas panorámicas y acceso directo a la terraza",
+      "name": "Habitación Principal",
+      "description": "Espaciosa habitación con cama King Size y baño privado.",
       "capacity": 2,
-      "size": "45 m²",
-      "amenities": ["Cama King Size", "Baño privado", "Terraza", "Smart TV", "Aire acondicionado", "Jacuzzi"],
-      "price": 150,
-      "image": "/images/rooms/master-suite.jpg"
+      "size": "Amplia",
+      "amenities": ["Cama King", "Baño privado", "Terraza", "Smart TV"],
+      "image": "/images/rooms/master.jpg"
     },
     {
       "id": 2,
-      "name": "Habitación Secundaria Confort",
-      "description": "Espaciosa habitación con dos camas individuales, perfecta para familias",
+      "name": "Habitación Secundaria 1",
+      "description": "Habitación con cama Queen Size, cómoda y acogedora.",
       "capacity": 2,
-      "size": "35 m²",
-      "amenities": ["Camas Queen", "Baño compartido", "Ventilador de techo", "Smart TV"],
-      "price": 100,
-      "image": "/images/rooms/secondary.jpg"
+      "size": "Estándar",
+      "amenities": ["Cama Queen", "Acceso compartido", "Smart TV"],
+      "image": "/images/rooms/secondary-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Habitación Secundaria 2",
+      "description": "Habitación con cama Queen Size, ideal para familias.",
+      "capacity": 2,
+      "size": "Estándar",
+      "amenities": ["Cama Queen", "Acceso compartido", "Smart TV"],
+      "image": "/images/rooms/secondary-2.jpg"
     }
   ],
   "spaces": [
     {
       "id": 1,
-      "name": "Sala de Estar",
-      "description": "Espacio amplio y luminoso con vistas al jardín",
-      "amenities": ["Smart TV", "WiFi", "Sofá cómodo", "Área de entretenimiento"]
+      "name": "Jardín & Bosque",
+      "description": "Vegetación abundante, palmeras y el verde vivo que da nombre a LUCULUC.",
+      "amenities": ["Jardín tropical", "Entorno de bosque", "Sonidos de naturaleza"]
     },
     {
       "id": 2,
-      "name": "Cocina Integral",
-      "description": "Completamente equipada para preparar tus comidas",
-      "amenities": ["Estufa", "Refrigerador", "Lavavajillas", "Microondas"]
+      "name": "Sala de Estar",
+      "description": "Espacio amplio para relajarse, convivir y disfrutar en familia.",
+      "amenities": ["Smart TV", "Ambiente cómodo", "Vista al jardín"]
     },
     {
       "id": 3,
-      "name": "Terraza Panorámica",
-      "description": "Tu oasis privado con vista al atardecer",
-      "amenities": ["Parrilla BBQ", "Jacuzzi", "Mesas de exterior", "Iluminación ambiental"]
+      "name": "Cocina",
+      "description": "Completamente equipada para preparar tus propias comidas.",
+      "amenities": ["Equipada", "Zona de comedor", "Utensilios completos"]
     },
     {
       "id": 4,
-      "name": "Área de Trabajo",
-      "description": "Espacio dedicado para trabajar en la naturaleza",
-      "amenities": ["Escritorio", "WiFi de alta velocidad", "Clima controlado"]
+      "name": "Terraza",
+      "description": "Tu espacio para respirar el aire fresco de San Carlos rodeado de naturaleza.",
+      "amenities": ["Área exterior", "Vistas al bosque", "Aire puro"]
     }
   ],
   "contact": {
-    "whatsapp": "your-whatsapp-number",
-    "email": "contact@cabanatropical.com",
-    "phone": "+506-XXXX-XXXX",
+    "host": "Dahianna",
+    "whatsapp": "50685587119",
+    "whatsappFormatted": "+506 8558-7119",
+    "email": "",
+    "phone": "",
     "socialMedia": {
-      "instagram": "https://instagram.com/cabanatropical",
-      "facebook": "https://facebook.com/cabanatropical",
-      "tiktok": "https://tiktok.com/@cabanatropical"
+      "linktree": "https://solo.to/luculuccr",
+      "instagram": "https://instagram.com/luculuccr",
+      "airbnb": "https://es-l.airbnb.com/rooms/887112278835757984"
     }
   }
 }
+

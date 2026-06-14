@@ -2,63 +2,63 @@
   "faqs": [
     {
       "id": 1,
-      "category": "Reservations",
-      "question": "¿Cuál es el procedimiento de reserva?",
-      "answer": "Puedes reservar directamente a través de nuestro sitio web, vía WhatsApp o correo electrónico. Una vez confirmada tu reserva, recibirás un correo con todos los detalles e instrucciones de acceso."
+      "category": "Check-in & Check-out",
+      "question": "¿Cuál es el horario de check-in?",
+      "answer": "El check-in es a partir de las 2:00 PM. Es un check-in independiente: al confirmar tu reserva te enviamos de forma privada todas las instrucciones de acceso para que llegues sin contratiempos."
     },
     {
       "id": 2,
-      "category": "Reservations",
-      "question": "¿Cuál es la política de cancelación?",
-      "answer": "Ofrecemos cancelación gratuita hasta 7 días antes de tu llegada. Después de este período, se aplicará el 50% de la tarifa. Cancelaciones 2 días antes del check-in son no reembolsables."
+      "category": "Check-in & Check-out",
+      "question": "¿Cómo llego a LUCULUC?",
+      "answer": "Te enviamos rutas detalladas en Waze según vengas por San Ramón, Ciudad Quesada o La Fortuna. Esto evita que el GPS te lleve por calles de lastre incorrectas y garantiza un acceso adecuado a la cabaña."
     },
     {
       "id": 3,
-      "category": "CheckIn",
-      "question": "¿Cuál es el horario de check-in y check-out?",
-      "answer": "Check-in: 3:00 PM | Check-out: 12:00 PM. Se puede acordar horarios especiales previa solicitud."
+      "category": "Check-in & Check-out",
+      "question": "¿El acceso es independiente?",
+      "answer": "Sí. Cuentas con acceso independiente mediante una caja de seguridad. Las instrucciones y el código se comparten únicamente contigo tras confirmar tu reserva."
     },
     {
       "id": 4,
-      "category": "CheckIn",
-      "question": "¿Cómo es el proceso de acceso a la propiedad?",
-      "answer": "Recibirás un código de acceso digital que podrás usar en la cerradura inteligente. También contarás con soporte de nuestro equipo para cualquier duda."
+      "category": "Reservas",
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente con nosotros vía WhatsApp para evitar comisiones, o a través de nuestro perfil de Airbnb. Estaremos encantados de ayudarte con fechas y disponibilidad."
     },
     {
       "id": 5,
-      "category": "Pets",
-      "question": "¿Se permiten mascotas?",
-      "answer": "Sí, aceptamos mascotas pequeñas y medianas. Aplica una tarifa adicional de $25 por mascota por noche. Deben ser bien educadas y no pueden quedarse solas."
+      "category": "Reservas",
+      "question": "¿Cuál es la política de cancelación?",
+      "answer": "Aplican las condiciones indicadas al momento de reservar. Contáctanos directamente si necesitas modificar tu reserva y haremos lo posible por ayudarte."
     },
     {
       "id": 6,
-      "category": "Parking",
-      "question": "¿Hay estacionamiento disponible?",
-      "answer": "Sí, contamos con estacionamiento seguro dentro de la propiedad, incluido en tu reserva."
+      "category": "La Cabaña",
+      "question": "¿Cuál es la capacidad de la cabaña?",
+      "answer": "LUCULUC está pensada para alojar cómodamente a tu grupo en un ambiente íntimo rodeado de naturaleza. Consúltanos por la capacidad exacta según tu reserva."
     },
     {
       "id": 7,
-      "category": "WiFi",
-      "question": "¿Cuál es la velocidad del WiFi?",
-      "answer": "Contamos con fibra óptica de 300 Mbps, ideal para trabajar o ver contenido en streaming sin interrupciones."
+      "category": "La Cabaña",
+      "question": "¿Hay estacionamiento?",
+      "answer": "Sí. La cabaña cuenta con dos entradas: la principal y una entrada al garaje, donde puedes estacionar tu vehículo de forma segura."
     },
     {
       "id": 8,
-      "category": "Guests",
-      "question": "¿Cuál es la capacidad máxima de la cabaña?",
-      "answer": "La cabaña puede alojar cómodamente a 4 personas. Para grupos más grandes, contacta directamente para opciones especiales."
+      "category": "La Cabaña",
+      "question": "¿Qué hay alrededor de LUCULUC?",
+      "answer": "Estás a minutos de Ciudad Quesada y a menos de una hora del Volcán Arenal, la Catarata de La Fortuna y aguas termales. Un punto ideal para explorar San Carlos."
     },
     {
       "id": 9,
-      "category": "Amenities",
-      "question": "¿La cabaña está completamente equipada?",
-      "answer": "Sí, incluye cocina completa, electrodomésticos modernos, aire acondicionado, Smart TV y todas las comodidades necesarias para una estadía confortable."
+      "category": "Servicios",
+      "question": "¿Tienen WiFi?",
+      "answer": "Sí, la cabaña cuenta con conexión a internet para que te mantengas conectado durante tu estadía."
     },
     {
       "id": 10,
-      "category": "Support",
-      "question": "¿Hay servicio de atención disponible?",
-      "answer": "Contamos con soporte 24/7 vía WhatsApp para cualquier emergencia o duda durante tu estadía."
+      "category": "Servicios",
+      "question": "¿Hay atención durante la estadía?",
+      "answer": "Por supuesto. Dahianna y el equipo de LUCULUC están disponibles para ayudarte con cualquier duda o necesidad durante tu estancia."
     }
   ]
 }
