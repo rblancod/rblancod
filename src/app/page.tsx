@@ -89,17 +89,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CAPACITY HIGHLIGHT */}
+      <section className="section-padding container-custom">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto liquid-glass rounded-2xl p-8 md:p-10 text-center"
+        >
+          <div className="grid grid-cols-3 gap-6 mb-4">
+            <div>
+              <p className="text-4xl font-serif font-bold text-luculuc-300 mb-1">
+                {propertyData.capacity?.guests}
+              </p>
+              <p className="text-xs text-cream/60 uppercase tracking-wide">Huéspedes</p>
+            </div>
+            <div>
+              <p className="text-4xl font-serif font-bold text-luculuc-300 mb-1">
+                {propertyData.capacity?.bedrooms}
+              </p>
+              <p className="text-xs text-cream/60 uppercase tracking-wide">Habitaciones</p>
+            </div>
+            <div>
+              <p className="text-4xl font-serif font-bold text-luculuc-300 mb-1">
+                {propertyData.capacity?.bathrooms}
+              </p>
+              <p className="text-xs text-cream/60 uppercase tracking-wide">Baño</p>
+            </div>
+          </div>
+          <p className="text-sm text-cream/50">
+            Espacio perfecto para familias y grupos de amigos
+          </p>
+        </motion.div>
+      </section>
+
       {/* ROOMS / SPACES */}
       <section id="rooms" className="section-padding container-custom">
         <div className="text-center mb-14">
-          <span className="section-label inline-block mb-4">Espacios</span>
+          <span className="section-label inline-block mb-4">Habitaciones</span>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-cream">
-            La Cabaña y sus Rincones
+            Espacios Cómodos y Acogedores
           </h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {propertyData.rooms.map((room) => (
+          {propertyData.rooms?.map((room) => (
             <Card
               key={`room-${room.id}`}
               title={room.name}
@@ -108,26 +142,35 @@ export default function Home() {
               badge={`${room.capacity} huéspedes`}
             />
           ))}
-          {propertyData.spaces.map((space) => (
-            <div key={`space-${space.id}`} className="liquid-glass rounded-2xl p-6">
-              <h3 className="font-serif text-2xl font-semibold text-cream mb-2">
-                {space.name}
-              </h3>
-              <p className="text-sm text-cream/60 leading-relaxed mb-4">
-                {space.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {space.amenities.map((a) => (
-                  <span
-                    key={a}
-                    className="text-xs text-cream/70 bg-white/5 rounded-full px-3 py-1"
-                  >
-                    {a}
-                  </span>
-                ))}
+        </div>
+
+        {/* Other spaces */}
+        <div className="mt-10">
+          <h3 className="font-serif text-2xl font-semibold text-cream mb-6">
+            Otros Espacios
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {propertyData.spaces?.map((space) => (
+              <div key={`space-${space.id}`} className="liquid-glass rounded-2xl p-6">
+                <h4 className="font-serif text-lg font-semibold text-cream mb-2">
+                  {space.name}
+                </h4>
+                <p className="text-xs text-cream/60 leading-relaxed mb-3">
+                  {space.description}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {space.amenities.map((a) => (
+                    <span
+                      key={a}
+                      className="text-xs text-cream/70 bg-white/5 rounded-full px-2 py-0.5"
+                    >
+                      {a}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -160,7 +203,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GALLERY placeholder */}
+      {/* GALLERY */}
       <section id="gallery" className="section-padding container-custom">
         <div className="text-center mb-14">
           <span className="section-label inline-block mb-4">Galería</span>
@@ -169,7 +212,7 @@ export default function Home() {
           </h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {['Exterior', 'Interior', 'Jardines', 'Habitación', 'Atardeceres', 'Naturaleza'].map(
+          {['Exterior', 'Interior', 'Jardines', 'Habitación Principal', 'Atardeceres', 'Naturaleza'].map(
             (label, i) => (
               <motion.div
                 key={label}
@@ -177,17 +220,17 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className={`liquid-glass rounded-2xl flex items-center justify-center text-cream/40 ${
+                className={`liquid-glass rounded-2xl flex items-center justify-center text-cream/40 bg-gradient-to-br from-luculuc-900 to-forest-900 ${
                   i % 5 === 0 ? 'md:row-span-2 aspect-[3/4] md:aspect-auto' : 'aspect-square'
                 }`}
               >
-                <span className="text-sm tracking-wide">{label}</span>
+                <span className="text-sm tracking-wide text-center px-4">{label}</span>
               </motion.div>
             )
           )}
         </div>
         <p className="text-center text-cream/40 text-sm mt-6">
-          📸 Las fotos reales de LUCULUC se cargarán aquí
+          📸 Próximamente: fotos reales de LUCULUC
         </p>
       </section>
 
@@ -254,8 +297,13 @@ export default function Home() {
               Te ayudamos con fechas, disponibilidad e instrucciones de llegada.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="#contact" className="btn-glass px-8 py-4">
-                Consultar por WhatsApp
+              <a
+                href={`https://wa.me/${propertyData.contact.whatsapp}?text=${encodeURIComponent('Hola LUCULUC 🌿 Me gustaría consultar disponibilidad para reservar la cabaña.')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-glass px-8 py-4"
+              >
+                💬 Consultar por WhatsApp
               </a>
               <a
                 href={propertyData.links.airbnb}
@@ -263,7 +311,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="btn-glass px-8 py-4"
               >
-                Ver en Airbnb
+                🏡 Ver en Airbnb
               </a>
             </div>
             <p className="text-xs text-cream/50 mt-6">
@@ -299,8 +347,18 @@ export default function Home() {
             <div className="liquid-glass rounded-2xl p-6">
               <h3 className="section-label mb-4">Contáctanos</h3>
               <p className="text-sm text-cream/60 mb-4">
-                Anfitriona: <span className="text-cream">{propertyData.contact.host}</span>
+                Anfitriona: <span className="text-cream font-medium">{propertyData.contact.host}</span>
               </p>
+              <div className="space-y-2 mb-4">
+                <a
+                  href={`https://wa.me/${propertyData.contact.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-luculuc-300 hover:text-luculuc-200"
+                >
+                  📱 {propertyData.contact.whatsappFormatted}
+                </a>
+              </div>
               <div className="flex flex-wrap gap-3">
                 <a
                   href={propertyData.contact.socialMedia.linktree}

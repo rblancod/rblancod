@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-const WHATSAPP_NUMBER = ''; // TODO: número de LUCULUC (formato 506XXXXXXXX)
+const WHATSAPP_NUMBER = '50685587119'; // Dahianna LUCULUC
 const MESSAGE = 'Hola LUCULUC 🌿 Me gustaría consultar disponibilidad para reservar la cabaña.';
 
 export default function FloatingWhatsApp() {

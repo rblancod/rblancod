@@ -2,8 +2,8 @@
   "name": "LUCULUC",
   "fullName": "LUCULUC Garden & Forest",
   "tagline": "Verde Relajante Vivo",
-  "description": "Una cabaña inmersa en la naturaleza tropical de La Tigra, San Carlos. Rodeada de palmeras y vegetación abundante, LUCULUC es tu refugio para desconectar entre el verde vivo de Costa Rica.",
-  "shortDescription": "Tu refugio tropical entre volcanes, bosque y jardines en el corazón de San Carlos.",
+  "description": "Una cabaña tropical en La Tigra, San Carlos. Rodeada de palmeras y abundante vegetación, LUCULUC es tu refugio para desconectar entre el verde vivo de Costa Rica.",
+  "shortDescription": "Tu refugio tropical entre volcanes, bosque y jardines en el corazón de San Carlos. Para 8 huéspedes, 3 habitaciones, privacidad total.",
   "links": {
     "airbnb": "https://es-l.airbnb.com/rooms/887112278835757984",
     "allLinks": "https://solo.to/luculuccr"
@@ -42,7 +42,7 @@
     "concept": "Verde. Relajante. Vivo.",
     "description": "LUCULUC Garden & Forest nace del deseo de crear un espacio donde la naturaleza se viva, no solo se observe. Entre palmeras, jardines y el sonido del bosque tropical de San Carlos, cada rincón fue pensado para que respires hondo, bajes el ritmo y te reconectes con lo esencial.",
     "highlights": [
-      "Cabaña rodeada de abundante vegetación y palmeras",
+      "Cabaña para 8 huéspedes con 3 habitaciones independientes",
       "Entorno natural de bosque y jardín tropical",
       "Privacidad total para tu descanso",
       "Ubicación estratégica entre Arenal, Fortuna y Ciudad Quesada",
@@ -56,14 +56,42 @@
     "selfCheckIn": true,
     "note": "Check-in independiente. Las instrucciones de acceso se envían de forma privada tras confirmar tu reserva."
   },
+  "capacity": {
+    "guests": 8,
+    "bedrooms": 3,
+    "beds": {
+      "king": 1,
+      "queen": 3
+    },
+    "bathrooms": 1
+  },
   "rooms": [
     {
       "id": 1,
-      "name": "Cabaña LUCULUC",
-      "description": "Espacio acogedor rodeado de vegetación tropical, con dos entradas independientes y garaje privado.",
-      "capacity": 4,
-      "amenities": ["Entrada independiente", "Garaje privado", "Rodeada de jardín", "Privacidad total"],
-      "image": "/images/rooms/cabana-principal.jpg"
+      "name": "Habitación Principal",
+      "description": "Espaciosa habitación con cama King Size y baño privado.",
+      "capacity": 2,
+      "size": "Amplia",
+      "amenities": ["Cama King", "Baño privado", "Terraza", "Smart TV"],
+      "image": "/images/rooms/master.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Habitación Secundaria 1",
+      "description": "Habitación con cama Queen Size, cómoda y acogedora.",
+      "capacity": 2,
+      "size": "Estándar",
+      "amenities": ["Cama Queen", "Acceso compartido", "Smart TV"],
+      "image": "/images/rooms/secondary-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Habitación Secundaria 2",
+      "description": "Habitación con cama Queen Size, ideal para familias.",
+      "capacity": 2,
+      "size": "Estándar",
+      "amenities": ["Cama Queen", "Acceso compartido", "Smart TV"],
+      "image": "/images/rooms/secondary-2.jpg"
     }
   ],
   "spaces": [
@@ -75,14 +103,27 @@
     },
     {
       "id": 2,
+      "name": "Sala de Estar",
+      "description": "Espacio amplio para relajarse, convivir y disfrutar en familia.",
+      "amenities": ["Smart TV", "Ambiente cómodo", "Vista al jardín"]
+    },
+    {
+      "id": 3,
+      "name": "Cocina",
+      "description": "Completamente equipada para preparar tus propias comidas.",
+      "amenities": ["Equipada", "Zona de comedor", "Utensilios completos"]
+    },
+    {
+      "id": 4,
       "name": "Terraza",
       "description": "Tu espacio para respirar el aire fresco de San Carlos rodeado de naturaleza.",
-      "amenities": ["Vista al jardín", "Área de descanso", "Aire puro"]
+      "amenities": ["Área exterior", "Vistas al bosque", "Aire puro"]
     }
   ],
   "contact": {
     "host": "Dahianna",
-    "whatsapp": "",
+    "whatsapp": "50685587119",
+    "whatsappFormatted": "+506 8558-7119",
     "email": "",
     "phone": "",
     "socialMedia": {
@@ -92,3 +133,4 @@
     }
   }
 }
+
