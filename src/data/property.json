@@ -142,8 +142,9 @@
     }
   ],
   "contact": {
-    "host": "Dahianna",
+    "host": "Ricardo Blanco",
     "owner": "Ricardo Blanco",
+    "hostRole": "Anfitrión y propietario",
     "whatsapp": "50685587119",
     "whatsappFormatted": "+506 8558-7119",
     "whatsappLink": "https://api.whatsapp.com/message/JSYEZGDZOKBBI1?autoload=1&app_absent=0",

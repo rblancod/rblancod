@@ -115,7 +115,7 @@ export default function Footer() {
             &copy; {currentYear} LUCULUC Garden &amp; Forest. Todos los derechos reservados.
           </p>
           <p className="text-xs text-cream/40">
-            Anfitriona {propertyData.contact.host} · Hecho con 🌿 en San Carlos, Costa Rica
+            {propertyData.contact.host} · Hecho con 🌿 en San Carlos, Costa Rica
           </p>
         </div>
       </div>

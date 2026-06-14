@@ -404,11 +404,9 @@ export default function Home() {
 
             <div className="liquid-glass rounded-2xl p-6">
               <h3 className="section-label mb-4">Contáctanos</h3>
-              <p className="text-sm text-cream/60 mb-1">
-                Anfitriona: <span className="text-cream font-medium">{propertyData.contact.host}</span>
-              </p>
               <p className="text-sm text-cream/60 mb-4">
-                Propietario: <span className="text-cream font-medium">{propertyData.contact.owner}</span>
+                {propertyData.contact.hostRole}:{' '}
+                <span className="text-cream font-medium">{propertyData.contact.host}</span>
               </p>
               <a
                 href={`https://wa.me/${propertyData.contact.whatsapp}`}
