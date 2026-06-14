@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import propertyData from '@/data/property.json';
 
@@ -47,8 +48,21 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-2xl">🌿</span>
-              <span className="font-serif text-xl font-semibold text-cream">LUCULUC</span>
+              <span className="relative h-12 w-12 rounded-full overflow-hidden ring-1 ring-white/15">
+                <Image
+                  src="/images/logo-mark.png"
+                  alt="Emblema LUCULUC Garden & Forest"
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </span>
+              <span className="font-serif text-xl font-semibold text-cream">
+                LUCULUC
+                <span className="block text-[10px] tracking-[0.3em] text-cream/40 font-sans uppercase -mt-1">
+                  Garden &amp; Forest
+                </span>
+              </span>
             </div>
             <p className="font-serif italic text-luculuc-300 mb-3">
               &ldquo;{propertyData.tagline}&rdquo;

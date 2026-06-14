@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface HeroSectionProps {
   name: string;
@@ -34,10 +35,26 @@ export default function HeroSection({
 
       {/* Content */}
       <div className="relative z-10 container-custom text-center pt-24 pb-16">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9 }}
+          className="mx-auto mb-6 relative h-24 w-24 sm:h-28 sm:w-28 rounded-full overflow-hidden ring-1 ring-white/20 shadow-2xl shadow-black/40"
+        >
+          <Image
+            src="/images/logo-mark.png"
+            alt="Emblema LUCULUC Garden & Forest"
+            fill
+            sizes="(max-width: 640px) 96px, 112px"
+            className="object-cover"
+            priority
+          />
+        </motion.div>
+
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
           className="section-label inline-block mb-6"
         >
           {fullName}

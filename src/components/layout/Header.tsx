@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -33,7 +34,16 @@ export default function Header() {
     >
       <nav className="container-custom py-4 flex justify-between items-center">
         <Link href="#hero" className="flex items-center gap-3 group">
-          <span className="text-2xl">🌿</span>
+          <span className="relative h-11 w-11 rounded-full overflow-hidden ring-1 ring-white/15 shadow-lg shadow-black/30 transition-transform group-hover:scale-105">
+            <Image
+              src="/images/logo-mark.png"
+              alt="Emblema LUCULUC Garden & Forest"
+              fill
+              sizes="44px"
+              className="object-cover"
+              priority
+            />
+          </span>
           <span className="font-serif text-xl font-semibold tracking-wide text-cream">
             LUCULUC
             <span className="block text-[10px] tracking-[0.3em] text-cream/50 font-sans uppercase -mt-1">
