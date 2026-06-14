@@ -4,6 +4,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import propertyData from '@/data/property.json';
+import { buildSocials, SocialIconRow } from '@/components/SocialLinks';
+
+const socials = buildSocials({
+  whatsapp: propertyData.contact.whatsappLink,
+  instagram: propertyData.contact.socialMedia.instagram,
+  facebook: propertyData.contact.socialMedia.facebook,
+  tiktok: propertyData.contact.socialMedia.tiktok,
+  airbnb: propertyData.contact.socialMedia.airbnb,
+  waze: propertyData.contact.socialMedia.waze,
+  maps: propertyData.contact.socialMedia.googleMaps,
+  links: propertyData.contact.socialMedia.linktree,
+});
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -30,10 +42,11 @@ export default function Footer() {
     {
       title: 'Conecta',
       links: [
-        { label: 'Todos nuestros enlaces', href: propertyData.contact.socialMedia.linktree },
         { label: 'Instagram', href: propertyData.contact.socialMedia.instagram },
+        { label: 'Facebook', href: propertyData.contact.socialMedia.facebook },
+        { label: 'TikTok', href: propertyData.contact.socialMedia.tiktok },
         { label: 'Airbnb', href: propertyData.contact.socialMedia.airbnb },
-        { label: 'Reservar', href: '#booking' },
+        { label: 'Todos nuestros enlaces', href: propertyData.contact.socialMedia.linktree },
       ],
     },
   ];
@@ -67,9 +80,10 @@ export default function Footer() {
             <p className="font-serif italic text-luculuc-300 mb-3">
               &ldquo;{propertyData.tagline}&rdquo;
             </p>
-            <p className="text-sm text-cream/50 leading-relaxed">
+            <p className="text-sm text-cream/50 leading-relaxed mb-5">
               {propertyData.location.address}, {propertyData.location.country}.
             </p>
+            <SocialIconRow socials={socials} />
           </motion.div>
 
           {sections.map((section) => (
@@ -101,7 +115,7 @@ export default function Footer() {
             &copy; {currentYear} LUCULUC Garden &amp; Forest. Todos los derechos reservados.
           </p>
           <p className="text-xs text-cream/40">
-            Hecho con 🌿 en San Carlos, Costa Rica
+            Anfitriona {propertyData.contact.host} · Hecho con 🌿 en San Carlos, Costa Rica
           </p>
         </div>
       </div>

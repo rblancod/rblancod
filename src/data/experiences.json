@@ -3,50 +3,66 @@
     {
       "id": 1,
       "name": "Volcán Arenal",
-      "category": "naturaleza",
-      "description": "Uno de los volcanes más emblemáticos de Costa Rica, con senderos y vistas imponentes.",
-      "distance": "≈ 40 min",
-      "image": "/images/experiences/arenal.jpg"
+      "category": "Naturaleza",
+      "icon": "🌋",
+      "description": "Uno de los volcanes más emblemáticos de Costa Rica, con senderos, miradores y vistas imponentes.",
+      "distance": "≈ 25 min"
     },
     {
       "id": 2,
       "name": "Catarata de La Fortuna",
-      "category": "cataratas",
-      "description": "Impresionante caída de agua de 70 metros rodeada de selva tropical.",
-      "distance": "≈ 45 min",
-      "image": "/images/experiences/catarata-fortuna.jpg"
+      "category": "Cataratas",
+      "icon": "💧",
+      "description": "Impresionante caída de agua de 70 metros rodeada de selva tropical, ideal para refrescarse.",
+      "distance": "≈ 30 min"
     },
     {
       "id": 3,
       "name": "Aguas Termales",
-      "category": "bienestar",
-      "description": "Relájate en las aguas termales naturales calentadas por el volcán Arenal.",
-      "distance": "≈ 40 min",
-      "image": "/images/experiences/termales.jpg"
+      "category": "Bienestar",
+      "icon": "♨️",
+      "description": "Relájate en aguas termales naturales calentadas por el calor del volcán Arenal.",
+      "distance": "≈ 25 min"
     },
     {
       "id": 4,
-      "name": "Ciudad Quesada",
-      "category": "gastronomía",
-      "description": "Centro urbano de San Carlos con restaurantes, cafeterías y comercios locales.",
-      "distance": "≈ 30 min",
-      "image": "/images/experiences/ciudad-quesada.jpg"
+      "name": "Avistamiento de Fauna",
+      "category": "Naturaleza",
+      "icon": "🦋",
+      "description": "Observa aves, monos y lapas en su hábitat natural desde la propia montaña de LUCULUC.",
+      "distance": "En la propiedad"
     },
     {
       "id": 5,
-      "name": "Senderos & Bosque Lluvioso",
-      "category": "aventura",
-      "description": "Camina entre la exuberante naturaleza de San Carlos y observa flora y fauna tropical.",
-      "distance": "Alrededores",
-      "image": "/images/experiences/senderos.jpg"
+      "name": "Senderos, Ríos & Montaña",
+      "category": "Aventura",
+      "icon": "🥾",
+      "description": "Explora senderos propios, ríos cristalinos y una montaña privada inmersa en bosque tropical.",
+      "distance": "En la propiedad"
     },
     {
       "id": 6,
       "name": "Tours de Aventura",
-      "category": "aventura",
+      "category": "Aventura",
+      "icon": "🌉",
       "description": "Canopy, rafting, puentes colgantes y más actividades en la región de Arenal.",
-      "distance": "≈ 40-50 min",
-      "image": "/images/experiences/aventura.jpg"
+      "distance": "≈ 25-45 min"
+    },
+    {
+      "id": 7,
+      "name": "Ciudad Quesada",
+      "category": "Gastronomía",
+      "icon": "🍽️",
+      "description": "Centro urbano de San Carlos con restaurantes, cafeterías, comercios y servicios.",
+      "distance": "≈ 25 min"
+    },
+    {
+      "id": 8,
+      "name": "Parque Nacional",
+      "category": "Naturaleza",
+      "icon": "🌿",
+      "description": "Bosque lluvioso con flora y fauna tropical para los amantes de la naturaleza.",
+      "distance": "≈ 30-45 min"
     }
   ]
 }

@@ -1,59 +1,77 @@
 {
-  "note": "Amenidades base. Ajusta según el equipamiento real de LUCULUC.",
+  "note": "Amenidades destacadas de LUCULUC Garden & Forest.",
   "amenities": [
     {
       "id": 1,
-      "name": "WiFi",
-      "icon": "wifi",
-      "description": "Conexión a internet para mantenerte conectado durante tu estadía."
+      "name": "Jacuzzi al Aire Libre",
+      "icon": "jacuzzi",
+      "description": "Hidromasaje rodeado de flora tropical, disponible todo el año. Descanso, contemplación y renovación en plena naturaleza."
     },
     {
       "id": 2,
-      "name": "Cocina",
-      "icon": "cooking",
-      "description": "Espacio equipado para preparar tus propias comidas."
+      "name": "WiFi de Alta Velocidad",
+      "icon": "wifi",
+      "description": "93 Mbps verificados: transmite en 4K y únete a videollamadas sin perder conexión con el mundo."
     },
     {
       "id": 3,
-      "name": "Estacionamiento",
-      "icon": "parking",
-      "description": "Garaje y entrada privada para tu vehículo."
+      "name": "Cocina Equipada",
+      "icon": "cooking",
+      "description": "Prepara tus comidas favoritas con total comodidad: estufa de gas, microondas, cafetera y utensilios completos."
     },
     {
       "id": 4,
-      "name": "Agua Caliente",
-      "icon": "water",
-      "description": "Agua caliente disponible para tu comodidad."
+      "name": "Estacionamiento Privado",
+      "icon": "parking",
+      "description": "Acceso fácil, seguro y exclusivo para que tu experiencia sea cómoda desde el momento de tu llegada."
     },
     {
       "id": 5,
-      "name": "Smart TV",
-      "icon": "tv",
-      "description": "Entretenimiento con acceso a plataformas de streaming."
+      "name": "Agua Caliente",
+      "icon": "water",
+      "description": "Tras explorar la belleza natural de San Carlos, disfruta de una ducha relajante que renueva cuerpo y mente."
     },
     {
       "id": 6,
-      "name": "Jardín Tropical",
-      "icon": "garden",
-      "description": "Rodeada de palmeras y abundante vegetación nativa."
+      "name": "Smart TV con Streaming",
+      "icon": "tv",
+      "description": "Televisor HD de 32\" con Chromecast. Convierte tus noches en momentos de descanso y entretenimiento."
     },
     {
       "id": 7,
-      "name": "Terraza",
-      "icon": "bbq",
-      "description": "Área exterior para descansar al aire libre."
+      "name": "Jardines Tropicales",
+      "icon": "garden",
+      "description": "Despierta rodeado de vegetación exuberante, palmeras y el sonido natural de un entorno diseñado para desconectar."
     },
     {
       "id": 8,
-      "name": "Check-in Independiente",
-      "icon": "security",
-      "description": "Acceso autónomo con caja de seguridad e instrucciones privadas."
+      "name": "Terraza & Balcón",
+      "icon": "terrace",
+      "description": "Disfruta amaneceres, atardeceres y momentos de paz en un espacio creado para contemplar la belleza del entorno."
     },
     {
       "id": 9,
-      "name": "Entorno de Bosque",
-      "icon": "service",
-      "description": "Inmersión total en la naturaleza tropical de San Carlos."
+      "name": "Aire Acondicionado",
+      "icon": "ac",
+      "description": "Climatización para tu confort en cada habitación durante toda tu estadía."
+    },
+    {
+      "id": 10,
+      "name": "Check-in Autónomo",
+      "icon": "security",
+      "description": "Llega cuando te resulte más conveniente y accede con total privacidad y seguridad."
+    },
+    {
+      "id": 11,
+      "name": "Apto para Mascotas",
+      "icon": "pets",
+      "description": "Tu compañero de cuatro patas es bienvenido. Sin restricciones para animales de asistencia."
+    },
+    {
+      "id": 12,
+      "name": "Inmersión en el Bosque",
+      "icon": "forest",
+      "description": "Más que un hospedaje: una experiencia de descanso, conexión y bienestar en la naturaleza de San Carlos."
     }
   ]
 }

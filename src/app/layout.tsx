@@ -67,8 +67,10 @@ const jsonLd = {
   url: SITE_URL,
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'La Tigra',
+    streetAddress: 'La Lucha, La Tigra',
+    addressLocality: 'San Carlos',
     addressRegion: 'Alajuela',
+    postalCode: '21008',
     addressCountry: 'CR',
   },
   geo: {
@@ -77,11 +79,21 @@ const jsonLd = {
     longitude: propertyData.location.longitude,
   },
   amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'Jacuzzi', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'WiFi', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Aire acondicionado', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Cocina equipada', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Estacionamiento', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Jardín', value: true },
   ],
-  petsAllowed: false,
+  sameAs: [
+    propertyData.contact.socialMedia.instagram,
+    propertyData.contact.socialMedia.facebook,
+    propertyData.contact.socialMedia.tiktok,
+    propertyData.contact.socialMedia.airbnb,
+    propertyData.contact.socialMedia.linktree,
+  ],
+  petsAllowed: true,
   smokingAllowed: false,
 };
 

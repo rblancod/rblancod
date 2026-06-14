@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LUCULUC Garden and Forest">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#15512f"/>
+      <stop offset="60%" stop-color="#0d3a22"/>
+      <stop offset="100%" stop-color="#06160e"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6cf9a"/>
+      <stop offset="100%" stop-color="#bd9a5b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- base -->
+  <circle cx="120" cy="120" r="118" fill="url(#bg)"/>
+  <circle cx="120" cy="120" r="111" fill="none" stroke="url(#gold)" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="120" cy="120" r="104" fill="none" stroke="#f5f3ec" stroke-width="0.8" opacity="0.30"/>
+
+  <!-- volcano -->
+  <g stroke="#f5f3ec" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M70 150 L104 96 Q112 84 120 84 Q128 84 136 96 L170 150" opacity="0.95"/>
+    <!-- crater notch -->
+    <path d="M108 92 L120 84 L132 92" opacity="0.95"/>
+  </g>
+
+  <!-- rising steam / key motif -->
+  <path d="M120 80 C120 70 113 68 113 60 C113 53 120 52 120 45" stroke="url(#gold)" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.95"/>
+  <circle cx="120" cy="40" r="4.5" fill="url(#gold)"/>
+
+  <!-- ground line / branch -->
+  <path d="M58 154 Q120 168 182 154" stroke="#f5f3ec" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+  <!-- leaf sprig left -->
+  <g stroke="url(#gold)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M150 150 q14 -4 24 -16"/>
+    <path d="M160 144 q3 -7 -1 -13"/>
+    <path d="M168 138 q5 -5 4 -13"/>
+  </g>
+  <!-- frog dot accent -->
+  <circle cx="156" cy="150" r="4" fill="#c0492f"/>
+
+  <!-- wordmark -->
+  <text x="120" y="196" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="30" font-weight="600" letter-spacing="2" fill="#f5f3ec">LUCULUC</text>
+  <text x="120" y="212" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="8.5" letter-spacing="4" fill="#bd9a5b">GARDEN &amp; FOREST</text>
+</svg>
