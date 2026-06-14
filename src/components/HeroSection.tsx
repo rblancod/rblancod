@@ -36,43 +36,27 @@ export default function HeroSection({
       {/* Content */}
       <div className="relative z-10 container-custom text-center pt-24 pb-16">
         <motion.div
-          initial={{ opacity: 0, scale: 0.85 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9 }}
-          className="mx-auto mb-6 relative h-24 w-24 sm:h-28 sm:w-28 rounded-full overflow-hidden ring-1 ring-white/20 shadow-2xl shadow-black/40"
+          initial={{ opacity: 0, scale: 0.9, y: 10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="mx-auto mb-4 relative w-[300px] h-[280px] sm:w-[430px] sm:h-[402px]"
         >
           <Image
-            src="/images/logo-mark.png"
-            alt="Emblema LUCULUC Garden & Forest"
+            src="/images/logo-full.png"
+            alt="LUCULUC Garden & Forest"
             fill
-            sizes="(max-width: 640px) 96px, 112px"
-            className="object-cover"
+            sizes="(max-width: 640px) 300px, 430px"
+            className="object-contain drop-shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
             priority
           />
         </motion.div>
 
-        <motion.span
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="section-label inline-block mb-6"
-        >
-          {fullName}
-        </motion.span>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.1 }}
-          className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-semibold text-cream tracking-tight mb-4"
-        >
-          {name}
-        </motion.h1>
+        <h1 className="sr-only">{name} — {fullName}</h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.25 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
           className="font-serif italic text-2xl sm:text-3xl md:text-4xl text-luculuc-300 mb-8"
         >
           &ldquo;{tagline}&rdquo;
