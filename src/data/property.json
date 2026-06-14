@@ -2,66 +2,87 @@
   "name": "LUCULUC",
   "fullName": "LUCULUC Garden & Forest",
   "tagline": "Verde Relajante Vivo",
-  "description": "Una cabaña tropical en La Tigra, San Carlos. Rodeada de palmeras y abundante vegetación, LUCULUC es tu refugio para desconectar entre el verde vivo de Costa Rica.",
-  "shortDescription": "Tu refugio tropical entre volcanes, bosque y jardines en el corazón de San Carlos. Para 8 huéspedes, 3 habitaciones, privacidad total.",
+  "description": "Sumérgete en la naturaleza, disfruta del jacuzzi y la ducha externa, y explora senderos, ríos y una montaña propia. Avista aves, monos y lapas en su hábitat natural.",
+  "shortDescription": "Refugio verde, cómodo y privado en La Tigra, San Carlos. Jacuzzi al aire libre, jardines tropicales y bosque propio para revivir tu energía.",
+  "heroLead": "Relájate, descansa y revive tu energía en este refugio verde, cómodo y privado, ideal para familias, parejas o grupos que buscan una experiencia auténtica y revitalizante.",
   "links": {
-    "airbnb": "https://es-l.airbnb.com/rooms/887112278835757984",
+    "airbnb": "https://es-l.airbnb.com/rooms/887112278835757984?guests=1&adults=1&s=67&unique_share_id=43a3db53-9f2a-48c4-9899-3193e54afe24",
+    "instagram": "https://www.instagram.com/luculuccr",
+    "facebook": "https://www.facebook.com/luculuccr/",
+    "tiktok": "https://www.tiktok.com/@luculuccr",
+    "whatsapp": "https://api.whatsapp.com/message/JSYEZGDZOKBBI1?autoload=1&app_absent=0",
+    "waze": "https://www.waze.com/es-419/live-map/directions?to=ll.10.352833%2C-84.575393",
+    "googleMaps": "https://www.google.com/maps?q=LUCULUC+Garden+%26+Forest,+La+Lucha,+Provincia+de+Alajuela,+La+Tigra,+21008",
     "allLinks": "https://solo.to/luculuccr"
   },
   "location": {
     "address": "La Lucha, La Tigra, San Carlos",
     "region": "Alajuela",
     "country": "Costa Rica",
-    "latitude": 10.3667,
-    "longitude": -84.5167,
+    "postalCode": "21008",
+    "latitude": 10.352833,
+    "longitude": -84.575393,
+    "landSize": "800 m² de terreno rodeado de naturaleza",
     "nearbyPlaces": {
-      "fortuna": {
+      "arenal": {
         "name": "La Fortuna / Volcán Arenal",
-        "distance": "≈ 40 min"
+        "distance": "≈ 25 min"
       },
       "ciudadQuesada": {
         "name": "Ciudad Quesada (San Carlos)",
-        "distance": "≈ 30 min"
+        "distance": "≈ 25 min"
       },
       "sanRamon": {
         "name": "San Ramón",
         "distance": "≈ 45 min"
       },
-      "airport": {
-        "name": "Aeropuerto Internacional SJO",
-        "distance": "≈ 2 h 30 min"
+      "sjo": {
+        "name": "Aeropuerto Internacional Juan Santamaría (Alajuela)",
+        "distance": "≈ 2 h"
       },
-      "supermarket": {
-        "name": "Supermercado más cercano (La Tigra)",
-        "distance": "≈ 10 min"
+      "lir": {
+        "name": "Aeropuerto Internacional Daniel Oduber Quirós (Guanacaste)",
+        "distance": "≈ 3 h"
       }
     }
   },
   "about": {
-    "title": "Sobre LUCULUC",
+    "title": "El Espacio",
     "concept": "Verde. Relajante. Vivo.",
-    "description": "LUCULUC Garden & Forest nace del deseo de crear un espacio donde la naturaleza se viva, no solo se observe. Entre palmeras, jardines y el sonido del bosque tropical de San Carlos, cada rincón fue pensado para que respires hondo, bajes el ritmo y te reconectes con lo esencial.",
+    "lead": "Tu refugio natural para reconectar y relajarte.",
+    "description": "LUCULUC Garden & Forest es una cabaña amplia, acogedora y llena de vida, ubicada en plena armonía con la naturaleza. Un espacio perfecto para disfrutar en pareja, con familia, amigos o simplemente contigo mismo, en busca de paz y bienestar.",
+    "detail": "La cabaña cuenta con 3 habitaciones completas, 4 camas tipo Queen, aire acondicionado, Wi-Fi, cocina equipada, ducha externa y corredores amplios que te conectan con el entorno natural. El balcón, con acabados en madera, ofrece una vista encantadora hacia una laguna estacional donde las aves locales hacen frecuentes apariciones.",
+    "jacuzzi": "Uno de los mayores placeres que ofrece LUCULUC es su jacuzzi hidromasaje al aire libre, rodeado por la flora tropical que invita al descanso, la contemplación y la renovación.",
+    "access": "La propiedad cuenta con 800 m² de terreno rodeado de naturaleza, con un jardín tropical amplio y hermoso disponible para tu disfrute en cualquier momento del día.",
     "highlights": [
-      "Cabaña para 8 huéspedes con 3 habitaciones independientes",
-      "Entorno natural de bosque y jardín tropical",
-      "Privacidad total para tu descanso",
-      "Ubicación estratégica entre Arenal, Fortuna y Ciudad Quesada",
-      "Acceso independiente con caja de seguridad",
-      "Espacio diseñado para desconectar y relajarte"
+      "3 habitaciones completas con 4 camas tipo Queen",
+      "Jacuzzi hidromasaje al aire libre entre flora tropical",
+      "Aire acondicionado, Wi-Fi de alta velocidad y cocina equipada",
+      "Balcón de madera con vista a la laguna estacional",
+      "Ducha externa y amplios corredores hacia la naturaleza",
+      "800 m² de jardín tropical y bosque propio"
+    ]
+  },
+  "nearby": {
+    "title": "Comodidades cercanas",
+    "items": [
+      "A 600 m: supermercados, plaza deportiva y comodidades del pueblo",
+      "A pocos kilómetros: opciones de comida rápida para salidas prácticas",
+      "En 5 km: gasolineras, farmacias, bancos y servicios esenciales",
+      "Lista de restaurantes locales con servicio express a tu disposición"
     ]
   },
   "checkIn": {
     "time": "2:00 PM",
     "checkOutTime": "11:00 AM",
     "selfCheckIn": true,
-    "note": "Check-in independiente. Las instrucciones de acceso se envían de forma privada tras confirmar tu reserva."
+    "note": "Llegada autónoma. Las instrucciones de acceso se envían de forma privada tras confirmar tu reserva. Hay personal disponible las 24 horas para recibir a los huéspedes."
   },
   "capacity": {
     "guests": 8,
     "bedrooms": 3,
     "beds": {
-      "king": 1,
-      "queen": 3
+      "queen": 4
     },
     "bathrooms": 1
   },
@@ -69,68 +90,73 @@
     {
       "id": 1,
       "name": "Habitación Principal",
-      "description": "Espaciosa habitación con cama King Size y baño privado.",
+      "description": "Espaciosa habitación con cama Queen, aire acondicionado y vista al entorno natural.",
       "capacity": 2,
       "size": "Amplia",
-      "amenities": ["Cama King", "Baño privado", "Terraza", "Smart TV"],
+      "amenities": ["Cama Queen", "Aire acondicionado", "Smart TV", "Ropa de cama de algodón"],
       "image": "/images/rooms/master.jpg"
     },
     {
       "id": 2,
       "name": "Habitación Secundaria 1",
-      "description": "Habitación con cama Queen Size, cómoda y acogedora.",
+      "description": "Habitación con cama Queen, cómoda y acogedora, con persianas opacas para un descanso pleno.",
       "capacity": 2,
       "size": "Estándar",
-      "amenities": ["Cama Queen", "Acceso compartido", "Smart TV"],
+      "amenities": ["Cama Queen", "Aire acondicionado", "Cortinas opacas"],
       "image": "/images/rooms/secondary-1.jpg"
     },
     {
       "id": 3,
       "name": "Habitación Secundaria 2",
-      "description": "Habitación con cama Queen Size, ideal para familias.",
-      "capacity": 2,
+      "description": "Habitación con camas Queen, ideal para familias o grupos de amigos.",
+      "capacity": 4,
       "size": "Estándar",
-      "amenities": ["Cama Queen", "Acceso compartido", "Smart TV"],
+      "amenities": ["Camas Queen", "Aire acondicionado", "Almohadas y mantas extra"],
       "image": "/images/rooms/secondary-2.jpg"
     }
   ],
   "spaces": [
     {
       "id": 1,
-      "name": "Jardín & Bosque",
-      "description": "Vegetación abundante, palmeras y el verde vivo que da nombre a LUCULUC.",
-      "amenities": ["Jardín tropical", "Entorno de bosque", "Sonidos de naturaleza"]
+      "name": "Jacuzzi al Aire Libre",
+      "description": "Hidromasaje rodeado de flora tropical, disponible todo el año para tu descanso y renovación.",
+      "amenities": ["Hidromasaje", "Al aire libre", "Disponible todo el año"]
     },
     {
       "id": 2,
-      "name": "Sala de Estar",
-      "description": "Espacio amplio para relajarse, convivir y disfrutar en familia.",
-      "amenities": ["Smart TV", "Ambiente cómodo", "Vista al jardín"]
+      "name": "Balcón de Madera",
+      "description": "Acabados en madera con vista encantadora a la laguna estacional y sus aves locales.",
+      "amenities": ["Vista a la laguna", "Avistamiento de aves", "Zona de descanso"]
     },
     {
       "id": 3,
-      "name": "Cocina",
-      "description": "Completamente equipada para preparar tus propias comidas.",
-      "amenities": ["Equipada", "Zona de comedor", "Utensilios completos"]
+      "name": "Cocina Equipada",
+      "description": "Completamente equipada con estufa de gas, microondas, cafetera y todo lo necesario para cocinar.",
+      "amenities": ["Estufa de gas", "Microondas", "Cafetera", "Utensilios completos"]
     },
     {
       "id": 4,
-      "name": "Terraza",
-      "description": "Tu espacio para respirar el aire fresco de San Carlos rodeado de naturaleza.",
-      "amenities": ["Área exterior", "Vistas al bosque", "Aire puro"]
+      "name": "Jardín & Bosque Propio",
+      "description": "800 m² de jardín tropical, senderos, río y montaña propia para explorar y reconectar.",
+      "amenities": ["Senderos", "Río", "Montaña propia", "Avistamiento de fauna"]
     }
   ],
   "contact": {
     "host": "Dahianna",
+    "owner": "Ricardo Blanco",
     "whatsapp": "50685587119",
     "whatsappFormatted": "+506 8558-7119",
+    "whatsappLink": "https://api.whatsapp.com/message/JSYEZGDZOKBBI1?autoload=1&app_absent=0",
     "email": "",
     "phone": "",
     "socialMedia": {
       "linktree": "https://solo.to/luculuccr",
-      "instagram": "https://instagram.com/luculuccr",
-      "airbnb": "https://es-l.airbnb.com/rooms/887112278835757984"
+      "instagram": "https://www.instagram.com/luculuccr",
+      "facebook": "https://www.facebook.com/luculuccr/",
+      "tiktok": "https://www.tiktok.com/@luculuccr",
+      "airbnb": "https://es-l.airbnb.com/rooms/887112278835757984?guests=1&adults=1&s=67&unique_share_id=43a3db53-9f2a-48c4-9899-3193e54afe24",
+      "waze": "https://www.waze.com/es-419/live-map/directions?to=ll.10.352833%2C-84.575393",
+      "googleMaps": "https://www.google.com/maps?q=LUCULUC+Garden+%26+Forest,+La+Lucha,+Provincia+de+Alajuela,+La+Tigra,+21008"
     }
   }
 }
-

@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LUCULUC">
+  <defs>
+    <radialGradient id="bgi" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#15512f"/>
+      <stop offset="60%" stop-color="#0d3a22"/>
+      <stop offset="100%" stop-color="#06160e"/>
+    </radialGradient>
+    <linearGradient id="goldi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6cf9a"/>
+      <stop offset="100%" stop-color="#bd9a5b"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="98" fill="url(#bgi)"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldi)" stroke-width="1.6" opacity="0.9"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#f5f3ec" stroke-width="0.8" opacity="0.28"/>
+
+  <!-- volcano -->
+  <g stroke="#f5f3ec" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M48 138 L88 76 Q97 62 106 62 Q115 62 124 76 L160 138" opacity="0.96"/>
+    <path d="M92 72 L106 62 L120 72" opacity="0.96"/>
+  </g>
+
+  <!-- steam / key -->
+  <path d="M106 58 C106 46 97 44 97 35 C97 27 106 26 106 18" stroke="url(#goldi)" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+  <circle cx="106" cy="13" r="6" fill="url(#goldi)"/>
+
+  <!-- branch -->
+  <path d="M40 142 Q100 160 164 142" stroke="#f5f3ec" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.72"/>
+
+  <!-- leaf sprig + frog -->
+  <g stroke="url(#goldi)" stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.92">
+    <path d="M138 138 q18 -5 30 -20"/>
+    <path d="M150 130 q4 -9 -1 -17"/>
+    <path d="M160 122 q6 -7 5 -17"/>
+  </g>
+  <circle cx="142" cy="138" r="5.2" fill="#c0492f"/>
+</svg>
